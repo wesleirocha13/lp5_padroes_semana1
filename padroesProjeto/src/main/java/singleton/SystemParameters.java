@@ -2,6 +2,9 @@ package singleton;
 
 /**
  * @author Weslei
+ * 
+ * Classe parâmetros de um sistema de ponto online
+ * Aqui são definidos parâmetros que ficaram disponíveis para todo o sistema
  */
 public class SystemParameters {
 
@@ -14,7 +17,8 @@ public class SystemParameters {
 
     private String version;
     private String environment;
-    private String name;
+    private String companyName;
+    private String companyTimezone;
 
     public String getVersion() {
         return version;
@@ -32,11 +36,19 @@ public class SystemParameters {
         this.environment = environment;
     }
     
-    public String getName() {
-        return name;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+    
+    public String getCompanyTimezone() {
+        return companyTimezone;
+    }
+
+    public void setCompanyTimezone(String companyTimezone) {
+        this.companyTimezone = companyTimezone;
     }
 }
